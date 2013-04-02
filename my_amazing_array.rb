@@ -1,14 +1,26 @@
-class Array
-  # Examine each pair in myself and swap them until all my
-  # elements are in order
-  #
-  def bubble_sort
-    # TODO: Replace this with your own bubble sort alorithm.
-    # HINT: The array that you are sorting is not to_sort anymore,
-    # its self.
-    #
-    # e.g. the first pair would be:
-    # pair = [self[0], self[1]]   
-    self
-  end
-end
+a = [5, 4, 1, 3]
+
+
+    counter = 1
+      while counter > 0 do
+        i = 0
+          #
+        while(i < a.length - 1) do
+          #compares the value of position, and if greater then switches then adds counter
+          if a[i] > a[i+1]
+            a[i], a[i+1] = a[i+1], a[i]
+            counter += 1
+            
+            puts " \n"
+            puts a.join
+          else
+          end
+        i += 1
+        end
+       counter -= 1
+      end
+    print a
+
+    
+# try each_under_withindex.
+
